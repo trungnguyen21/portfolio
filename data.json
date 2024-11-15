@@ -1,0 +1,41 @@
+{
+    "projects": [
+      {
+        "id": 1,
+        "title": "AutomatedYoutubeShorts",
+        "headline": "Mass-generating clips from user's text content.",
+        "description": "This project uses Python, MoviePy, and API integration to automate the creation of short video clips from text input provided by users. It's designed to streamline content creation for YouTube Shorts.",
+        "tags": ["Python", "MoviePy", "API"],
+        "links": {
+          "github": "https://github.com/user/project1",
+          "liveDemo": null
+        },
+        "image": "path/to/image1.jpg"
+      },
+      {
+        "id": 2,
+        "title": "Gustus",
+        "headline": "Recipe recommendations based on ingredients.",
+        "description": "Gustus is a recipe recommendation engine that leverages React.js, Node.js, and TailwindCSS to provide personalized recipes based on available ingredients.",
+        "tags": ["React.js", "Node.js", "TailwindCSS"],
+        "links": {
+          "github": "https://github.com/user/project2",
+          "liveDemo": null
+        },
+        "image": "path/to/image2.jpg"
+      },
+      {
+        "id": 3,
+        "title": "TrafficRobot",
+        "headline": "An industry-sized robot helps people crossing roads.",
+        "description": "TrafficRobot is a large-scale robot project that assists pedestrians in crossing roads safely. Built using Arduino, C++, and Python (tkinter), it aims to improve pedestrian safety in busy areas.",
+        "tags": ["Arduino", "C++", "Python (tkinter)"],
+        "links": {
+          "github": "https://github.com/user/project3",
+          "liveDemo": null
+        },
+        "image": "path/to/image3.jpg"
+      }
+    ]
+  }
+  

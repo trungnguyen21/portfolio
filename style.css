@@ -14,6 +14,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: var(--font-family);
+    scroll-behavior: smooth;
 }
 
 body {
@@ -29,6 +30,9 @@ body {
 .header {
     text-align: center;
     padding: 2em 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .header h1 {
@@ -42,7 +46,7 @@ body {
 }
 
 .contact-btn {
-    margin-top: 10px;
+    margin-top: 1rem;
     padding: 10px 20px;
     background-color: var(--accent-color);
     color: var(--text-color);
@@ -84,6 +88,7 @@ body {
 .projects-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 1em;
 }
 
@@ -93,10 +98,6 @@ body {
     border-radius: 5px;
 }
 
-.project h3 {
-    color: var(--accent-color);
-}
-
 .project a {
     color: var(--accent-color);
     text-decoration: none;
@@ -104,6 +105,21 @@ body {
 
 .project a:hover {
     text-decoration: underline;
+}
+
+.project-card {
+    background-color: #333;
+    padding: 1rem;
+    border-radius: 8px;
+    color: #fff;
+    width: 100%;
+    max-width: 500px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.project-card h3 {
+    color: var(--accent-color);
 }
 
 /* Project Tags */
@@ -116,12 +132,30 @@ body {
 }
 
 .tag {
-    background-color: var(--accent-color);
+    border: 1px solid var(--accent-color);
     color: var(--text-color);
     padding: 4px 10px;
     font-size: 0.9em;
     border-radius: 5px;
 }
+
+/* View More Button */
+.view-more {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    margin-top: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.view-more:hover {
+    background-color: #444;
+}
+
 
 
 /* Contact */

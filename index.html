@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="scripts.js" defer></script>
 </head>
 <body>
     <!-- Header Section -->
@@ -43,39 +44,12 @@
     <!-- Projects Section -->
     <section id="projects" class="section">
         <h2>Projects</h2>
-        <div class="projects-container">
-            <div class="project">
-                <h3>AutomatedYoutubeShorts</h3>
-                <p>Mass-generating clips from user's text content.</p>
-                <div class="tags">
-                    <span class="tag">Python</span>
-                    <span class="tag">MoviePy</span>
-                    <span class="tag">API</span>
-                </div>
-                <a href="#" target="_blank">GitHub</a>
-            </div>
-            <div class="project">
-                <h3>Gustus</h3>
-                <p>Recipe recommedations based on ingredients.</p>
-                <div class="tags">
-                    <span class="tag">React.js</span>
-                    <span class="tag">Node.js</span>
-                    <span class="tag">TailwindCSS</span>
-                </div>
-                <a href="#" target="_blank">View Project</a>
-            </div>
-            <div class="project">
-                <h3>TrafficRobot</h3>
-                <p>An industry-sized robot helps people crossing roads.</p>
-                <div class="tags">
-                    <span class="tag">Arduino</span>
-                    <span class="tag">C++</span>
-                    <span class="tag">Python (tkinter)</span>
-                </div>
-                <a href="#" target="_blank">View Project</a>
-            </div>
+        <div id="projects-container" class="projects-container">
+            <!-- Project cards will be dynamically inserted here -->
         </div>
+    
     </section>
+    
     
 
     <!-- Contact Section -->
