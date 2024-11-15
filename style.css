@@ -1,0 +1,155 @@
+/* Define global variables */
+:root {
+    --accent-color: #448CC2;
+    --font-family: Arial, sans-serif;
+    --background-color: #121212;
+    --text-color: #fff;
+    --secondary-text-color: #aaa;
+    --section-bg-color: #333;
+}
+
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+body {
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    padding: 2em 1em;
+}
+
+.header h1 {
+    font-size: 2em;
+    color: var(--accent-color);
+}
+
+.header p {
+    color: var(--secondary-text-color);
+    margin: 0.5em 0;
+}
+
+.contact-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Sections */
+.section {
+    max-width: 600px;
+    width: 90%;
+    margin: 2em auto;
+    padding: 1em;
+    text-align: center;
+    border-top: 1px solid var(--section-bg-color);
+}
+
+.section h2 {
+    color: var(--accent-color);
+    margin-bottom: 0.5em;
+}
+
+/* Skills List */
+.skills-list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.skills-list li {
+    background-color: var(--section-bg-color);
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+/* Projects */
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.project {
+    background-color: var(--section-bg-color);
+    padding: 1em;
+    border-radius: 5px;
+}
+
+.project h3 {
+    color: var(--accent-color);
+}
+
+.project a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+/* Project Tags */
+.tags {
+    margin-top: 0.5em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    padding: 4px 10px;
+    font-size: 0.9em;
+    border-radius: 5px;
+}
+
+
+/* Contact */
+#contact a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    margin-top: 2em;
+    text-align: center;
+    padding: 1em;
+    background-color: var(--section-bg-color);
+    width: 100%;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 1.5em;
+    }
+
+    .section h2 {
+        font-size: 1.2em;
+    }
+}
