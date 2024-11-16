@@ -1,5 +1,22 @@
 {
+    "about": {
+      "name": "Trung Nguyen",
+      "title": "CS @ UBC",
+      "email": "atrung380@gmail.com"
+    },
     "projects": [
+      {
+        "id": 0,
+        "title": "ChatDocument",
+        "headline": "RAG app for document queries. Powered by Google Gemini. Fully deployed on DigitalOcean.",
+        "description": "This project uses Python, MoviePy, and API integration to automate the creation of short video clips from text input provided by users. It's designed to streamline content creation for YouTube Shorts.",
+        "tags": ["Python", "LangChain", "FastAPI", "React.js", "Redis", "Docker", "NGINX"],
+        "links": {
+          "github": "https://github.com/user/project1",
+          "liveDemo": "https://theforevercanvas.com"
+        },
+        "image": "assets/chatdoc.jpeg"
+      },
       {
         "id": 1,
         "title": "AutomatedYoutubeShorts",
@@ -10,7 +27,7 @@
           "github": "https://github.com/user/project1",
           "liveDemo": null
         },
-        "image": "path/to/image1.jpg"
+        "image": "assets/youtube.png"
       },
       {
         "id": 2,
@@ -22,19 +39,51 @@
           "github": "https://github.com/user/project2",
           "liveDemo": null
         },
-        "image": "path/to/image2.jpg"
+        "image": "assets/gustus.png"
       },
       {
         "id": 3,
         "title": "TrafficRobot",
         "headline": "An industry-sized robot helps people crossing roads.",
         "description": "TrafficRobot is a large-scale robot project that assists pedestrians in crossing roads safely. Built using Arduino, C++, and Python (tkinter), it aims to improve pedestrian safety in busy areas.",
-        "tags": ["Arduino", "C++", "Python (tkinter)"],
+        "tags": ["Arduino", "C++", "Python"],
         "links": {
           "github": "https://github.com/user/project3",
           "liveDemo": null
         },
-        "image": "path/to/image3.jpg"
+        "image": "assets/robot.png"
+      }
+    ],
+    "experience": [
+      {
+        "id": 0,
+        "title": "Software Engineer Intern",
+        "company": "Tinhvan Software",
+        "location": "Hanoi, VN",
+        "start": "May",
+        "end": "Aug",
+        "year": 2024,
+        "description": [
+          "Developed and maintained software for Google's Gemini project.", 
+          "Worked closely with the team to deliver high-quality code and meet project deadlines."
+        ],
+        "tags": ["Python", "Java", "C++"],
+        "logo": "assets/tso.jpeg"
+      },
+      {
+        "id": 1,
+        "title": "Product Specialist Intern",
+        "company": "POMA Home",
+        "location": "Hanoi, VN",
+        "start": "Jan",
+        "end": "June",
+        "year": 2023,
+        "description": [
+          "Worked on the Facebook Ads team to develop new features and improve existing ones.", 
+          "Collaborated with team members to deliver high-quality code and meet project deadlines."
+        ],
+        "tags": ["React.js", "Node.js", "GraphQL"],
+        "logo": "assets/poma.png"
       }
     ]
   }

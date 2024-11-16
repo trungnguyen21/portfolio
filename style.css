@@ -116,15 +116,30 @@ body {
     max-width: 500px;
     cursor: pointer;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .project-card h3 {
+    margin-top: 0.5em;
     color: var(--accent-color);
+}
+
+.project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.project-description {
+    max-width: 80%;
 }
 
 /* Project Tags */
 .tags {
-    margin-top: 0.5em;
+    margin-top: 1em;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -150,13 +165,50 @@ body {
     font-size: 0.9em;
     margin-top: 1em;
     transition: background-color 0.3s ease;
+    text-decoration: none;
 }
 
 .view-more:hover {
     background-color: #444;
 }
 
+.links {
+    display: flex;
+    gap: 0.5em;
+    justify-content: center;
+}
 
+/* Experience */
+.experience-contain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.experience {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    margin-bottom: 2em;
+}
+
+.logo {
+    max-width: 5rem;
+    max-height: 5rem;
+    margin-right: 1em;
+    margin-top: 0.5em;
+}
+
+.experience-description {
+    margin-left: 1em;
+}
+
+.experience .headline {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+}
 
 /* Contact */
 #contact a {

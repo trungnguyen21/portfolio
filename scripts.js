@@ -1,5 +1,41 @@
 // script.js
 
+// Fetch the experiecne JSON file and render experience
+fetch('data.json')
+    .then(response => response.json())
+    .then(data => {
+        const experienceContainer = document.getElementById('experience-wrapper');
+        data.experience.forEach(experience => {
+            // Create experience card
+            const experienceCard = document.createElement('div');
+            experienceCard.classList.add('experience');
+            experienceCard.innerHTML = `
+                <div class="company-logo">
+                    <img src="${experience.logo}" alt="${experience.company}" class="logo">
+                </div>
+                <div class="experience-text"> 
+                    <div class="headline">
+                        <div>
+                            <h3>${experience.title}</h3>
+                            <p>${experience.company}</p>                    
+                        </div>
+                        <div style="text-align:end">
+                            <p style="color: #aaa">${experience.start} - ${experience.end}, ${experience.year}</p>
+                            <p style="color: #aaa">${experience.location}</p>
+                        </div>
+                    </div>
+                    <ul class="experience-description"></ul>
+                </div>
+            `;
+            experience.description.forEach(desc => {
+                const descEl = document.createElement('li');
+                descEl.textContent = desc;
+                experienceCard.querySelector('.experience-description').appendChild(descEl);
+            });
+            experienceContainer.appendChild(experienceCard);
+        });
+    })
+
 // Fetch the projects JSON file and render projects
 fetch('data.json')
     .then(response => response.json())
@@ -14,7 +50,10 @@ fetch('data.json')
                 <h3>${project.title}</h3>
                 <p class="project-description">${project.headline}</p>
                 <p class="tags"></p>
-                <button class="view-more" data-id="${project.id}">View More</button>
+                <div class="links">
+                    <a href="${project.links.github}" class="view-more" target="_blank">GitHub</a>
+                    <a href="${project.links.liveDemo}" class="view-more" target="_blank" ${project.links.liveDemo ? '' : 'hidden'}>Demo</a>
+                </div>
             `;
             project.tags.forEach(tag => {
                 const tagEl = document.createElement('span');
@@ -23,43 +62,6 @@ fetch('data.json')
                 projectCard.querySelector('.tags').appendChild(tagEl);
             });
             projectsContainer.appendChild(projectCard);
-
-            // Attach click event to open modal
-            projectCard.querySelector('.view-more').addEventListener('click', () => openModal(project));
         });
     })
     .catch(error => console.error('Error loading projects:', error));
-
-// Function to open the modal with project details
-function openModal(project) {
-    document.getElementById('modal-title').textContent = project.title;
-    document.getElementById('modal-description').textContent = project.description;
-    
-    // Tags
-    const modalTags = document.getElementById('modal-tags');
-    modalTags.innerHTML = ''; // Clear previous tags
-    project.tags.forEach(tag => {
-        const tagEl = document.createElement('span');
-        tagEl.classList.add('tag');
-        tagEl.textContent = tag;
-        modalTags.appendChild(tagEl);
-    });
-
-    // Links
-    document.getElementById('modal-github').href = project.links.github;
-    const liveDemoLink = document.getElementById('modal-liveDemo');
-    if (project.links.liveDemo) {
-        liveDemoLink.href = project.links.liveDemo;
-        liveDemoLink.classList.remove('hidden');
-    } else {
-        liveDemoLink.classList.add('hidden');
-    }
-
-    // Show modal
-    document.getElementById('project-modal').classList.remove('hidden');
-}
-
-// Close modal on click of the close button
-document.querySelector('.modal .close').addEventListener('click', () => {
-    document.getElementById('project-modal').classList.add('hidden');
-});
