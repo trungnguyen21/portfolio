@@ -8,11 +8,11 @@
       {
         "id": 0,
         "title": "ChatDocument",
-        "headline": "RAG app for document queries. Powered by Google Gemini. Fully deployed on DigitalOcean.",
-        "description": "This project uses Python, MoviePy, and API integration to automate the creation of short video clips from text input provided by users. It's designed to streamline content creation for YouTube Shorts.",
+        "headline": "Fullstack RAG app for document queries. Powered by Google Gemini. Deployed on DigitalOcean.",
+        "description": "This projects is a full-fledged RAG (Retrieval-Augmented Generation) application that allows users to query and extract information from PDF documents using Google Gemini. It's built with Python, LangChain, FastAPI, React.js, and Redis. Dockerized and deployed on DigitalOcean with NGINX.",
         "tags": ["Python", "LangChain", "FastAPI", "React.js", "Redis", "Docker", "NGINX"],
         "links": {
-          "github": "https://github.com/user/project1",
+          "github": "https://github.com/trungnguyen21/ChatDocument",
           "liveDemo": "https://theforevercanvas.com"
         },
         "image": "assets/chatdoc.jpeg"
@@ -20,11 +20,11 @@
       {
         "id": 1,
         "title": "AutomatedYoutubeShorts",
-        "headline": "Mass-generating clips from user's text content.",
+        "headline": "Mass-generating clips from user's text content. 40+ stars on GitHub.",
         "description": "This project uses Python, MoviePy, and API integration to automate the creation of short video clips from text input provided by users. It's designed to streamline content creation for YouTube Shorts.",
         "tags": ["Python", "MoviePy", "API"],
         "links": {
-          "github": "https://github.com/user/project1",
+          "github": "https://github.com/trungnguyen21/AutomatedYoutubeShorts",
           "liveDemo": null
         },
         "image": "assets/youtube.png"
@@ -36,7 +36,7 @@
         "description": "Gustus is a recipe recommendation engine that leverages React.js, Node.js, and TailwindCSS to provide personalized recipes based on available ingredients.",
         "tags": ["React.js", "Node.js", "TailwindCSS"],
         "links": {
-          "github": "https://github.com/user/project2",
+          "github": "https://devpost.com/software/gustus",
           "liveDemo": null
         },
         "image": "assets/gustus.png"
@@ -48,7 +48,7 @@
         "description": "TrafficRobot is a large-scale robot project that assists pedestrians in crossing roads safely. Built using Arduino, C++, and Python (tkinter), it aims to improve pedestrian safety in busy areas.",
         "tags": ["Arduino", "C++", "Python"],
         "links": {
-          "github": "https://github.com/user/project3",
+          "github": "https://github.com/trungnguyen21/Traffic-Robot",
           "liveDemo": null
         },
         "image": "assets/robot.png"
@@ -64,10 +64,10 @@
         "end": "Aug",
         "year": 2024,
         "description": [
-          "Developed and maintained software for Google's Gemini project.", 
-          "Worked closely with the team to deliver high-quality code and meet project deadlines."
+          "Built an AI Agent using Langchain to query and extract information of a PDF document powered by Gemini. ",
+          "Used Python FastAPI. Deployed on DigitalOcean with NGINX, PM2 and Docker."
         ],
-        "tags": ["Python", "Java", "C++"],
+        "tags": ["FastAPI", "Redis", "Docker", "NGINX", "PM2"],
         "logo": "assets/tso.jpeg"
       },
       {
@@ -79,10 +79,11 @@
         "end": "June",
         "year": 2023,
         "description": [
-          "Worked on the Facebook Ads team to develop new features and improve existing ones.", 
-          "Collaborated with team members to deliver high-quality code and meet project deadlines."
+          "Operated the Building Management System for 2 real-estate projects in Hanoi, provided technical support for 250+ active users monthly.",
+          "Delivered on-site training for 20 members of the Management Board of a 15-building township project; Pitched demonstration for 5 clients in Manila, Philippines.",
+          "Conducted cold calling 150 residents in the real-estate project to facilitate the installation and usage of our app; Troubleshooted and further supported for senior tenant."
         ],
-        "tags": ["React.js", "Node.js", "GraphQL"],
+        "tags": ["Communication", "Technical Support", "Client-first"],
         "logo": "assets/poma.png"
       }
     ]

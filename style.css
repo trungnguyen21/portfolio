@@ -47,7 +47,7 @@ body {
 
 .contact-btn {
     margin-top: 1rem;
-    padding: 10px 20px;
+    padding: 10px 10px;
     background-color: var(--accent-color);
     color: var(--text-color);
     text-decoration: none;
@@ -179,18 +179,20 @@ body {
 }
 
 /* Experience */
-.experience-contain {
+.experience-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
 .experience {
     display: flex;
     flex-direction: row;
     text-align: left;
-    margin-bottom: 2em;
+    margin-bottom: 3em;
+    max-width: 100%;
 }
 
 .logo {
@@ -208,6 +210,13 @@ body {
     display: flex;
     justify-content: space-between;
     margin-bottom: 0.5em;
+}
+
+.experience .experience-tags {
+    margin-top: 0.5em;
+    display: flex;
+    gap: 0.5em;
+    justify-self: center;
 }
 
 /* Contact */
@@ -229,13 +238,49 @@ body {
     width: 100%;
 }
 
+.resume {
+    height:fit-content;
+    margin: 1em;
+}
+
+.resume-btn {
+    background-color: var(--accent-color);
+    color: var(--text-color) !important;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.resume-btn:hover {
+    background-color: #444;
+    text-decoration: none;
+}
+
 /* Mobile Responsiveness */
 @media (max-width: 600px) {
     .header h1 {
-        font-size: 1.5em;
+        font-size: 1.6em;
     }
 
     .section h2 {
-        font-size: 1.2em;
+        font-size: 1.5em;
+    }
+
+    .company-logo {
+        display: none;
+    }
+
+    .experience .headline .right {
+        display: none;
+    }
+
+    .tag {
+        font-size: small;
     }
 }
